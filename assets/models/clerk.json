@@ -1,0 +1,33 @@
+{
+  "name": "clerk",
+  "colliders": [],
+  "animations": [
+    {
+      "name": "idle",
+      "duration": 3
+    },
+    {
+      "name": "look_up",
+      "duration": 2
+    },
+    {
+      "name": "vanish",
+      "duration": 1.5
+    }
+  ],
+  "nodes": [
+    "coat",
+    "collar",
+    "face",
+    "hair",
+    "face_shadow",
+    "sleeve",
+    "hand",
+    "trouser",
+    "shoe",
+    "sleeve",
+    "hand",
+    "trouser",
+    "shoe"
+  ]
+}

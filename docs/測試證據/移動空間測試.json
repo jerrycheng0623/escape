@@ -1,0 +1,352 @@
+{
+  "date": "2026-10-29",
+  "browser": "151.0.7922.34",
+  "method": "四方向實際鍵盤輸入；空間案例以正式控制器逐格路徑與射線檢查；場景採工程預置進度，不代表盲玩通關",
+  "results": [
+    {
+      "id": "MOV-01-w",
+      "result": "通過",
+      "before": {
+        "x": 0,
+        "z": 2.3,
+        "yaw": 0,
+        "pitch": 0
+      },
+      "after": {
+        "x": 0,
+        "z": 0.6601600000000002,
+        "yaw": 0,
+        "pitch": 0
+      },
+      "distance": 1.6398399999999995
+    },
+    {
+      "id": "MOV-01-s",
+      "result": "通過",
+      "before": {
+        "x": 0,
+        "z": 0.6601600000000002,
+        "yaw": 0,
+        "pitch": 0
+      },
+      "after": {
+        "x": 0,
+        "z": 2.2601600000000004,
+        "yaw": 0,
+        "pitch": 0
+      },
+      "distance": 1.6
+    },
+    {
+      "id": "MOV-01-a",
+      "result": "通過",
+      "before": {
+        "x": 0,
+        "z": 2.2601600000000004,
+        "yaw": 0,
+        "pitch": 0
+      },
+      "after": {
+        "x": -1.6267199999999997,
+        "z": 2.2601600000000004,
+        "yaw": 0,
+        "pitch": 0
+      },
+      "distance": 1.6267199999999997
+    },
+    {
+      "id": "MOV-01-d",
+      "result": "通過",
+      "before": {
+        "x": -1.6267199999999997,
+        "z": 2.2601600000000004,
+        "yaw": 0,
+        "pitch": 0
+      },
+      "after": {
+        "x": 0.01312000000000118,
+        "z": 2.2601600000000004,
+        "yaw": 0,
+        "pitch": 0
+      },
+      "distance": 1.6398400000000009
+    },
+    {
+      "id": "SPACE-0",
+      "result": "通過",
+      "detail": {
+        "scene": 0,
+        "freeCells": 946,
+        "targets": [
+          {
+            "action": "intro",
+            "reachable": true,
+            "ray": "intro",
+            "pathSteps": 13
+          }
+        ],
+        "exits": {
+          "north": true,
+          "south": true
+        }
+      }
+    },
+    {
+      "id": "SPACE-1",
+      "result": "通過",
+      "detail": {
+        "scene": 1,
+        "freeCells": 1235,
+        "targets": [
+          {
+            "action": "elevator",
+            "reachable": true,
+            "ray": "elevator",
+            "pathSteps": 25
+          },
+          {
+            "action": "rules",
+            "reachable": true,
+            "ray": "rules",
+            "pathSteps": 15
+          },
+          {
+            "action": "count",
+            "reachable": true,
+            "ray": "count",
+            "pathSteps": 28
+          }
+        ],
+        "exits": {
+          "north": true,
+          "south": true
+        }
+      }
+    },
+    {
+      "id": "SPACE-2",
+      "result": "通過",
+      "detail": {
+        "scene": 2,
+        "freeCells": 1235,
+        "targets": [
+          {
+            "action": "door404",
+            "reachable": true,
+            "ray": "door404",
+            "pathSteps": 23
+          }
+        ],
+        "exits": {
+          "north": true,
+          "south": true
+        }
+      }
+    },
+    {
+      "id": "SPACE-3",
+      "result": "通過",
+      "detail": {
+        "scene": 3,
+        "freeCells": 851,
+        "targets": [
+          {
+            "action": "photos",
+            "reachable": true,
+            "ray": "photos",
+            "pathSteps": 19
+          },
+          {
+            "action": "knock",
+            "reachable": true,
+            "ray": "knock",
+            "pathSteps": 1
+          },
+          {
+            "action": "bed",
+            "reachable": true,
+            "ray": "bed",
+            "pathSteps": 9
+          }
+        ],
+        "exits": {
+          "north": true,
+          "south": true
+        }
+      }
+    },
+    {
+      "id": "SPACE-4",
+      "result": "通過",
+      "detail": {
+        "scene": 4,
+        "freeCells": 1007,
+        "targets": [
+          {
+            "action": "mirror",
+            "reachable": true,
+            "ray": "mirror",
+            "pathSteps": 29
+          },
+          {
+            "action": "align",
+            "reachable": true,
+            "ray": "align",
+            "pathSteps": 24
+          }
+        ],
+        "exits": {
+          "north": true,
+          "south": true
+        }
+      }
+    },
+    {
+      "id": "SPACE-5",
+      "result": "通過",
+      "detail": {
+        "scene": 5,
+        "freeCells": 1003,
+        "targets": [
+          {
+            "action": "timeline",
+            "reachable": true,
+            "ray": "timeline",
+            "pathSteps": 15
+          },
+          {
+            "action": "channels",
+            "reachable": true,
+            "ray": "channels",
+            "pathSteps": 18
+          }
+        ],
+        "exits": {
+          "north": true,
+          "south": true
+        }
+      }
+    },
+    {
+      "id": "SPACE-6",
+      "result": "通過",
+      "detail": {
+        "scene": 6,
+        "freeCells": 883,
+        "targets": [
+          {
+            "action": "report",
+            "reachable": true,
+            "ray": "report",
+            "pathSteps": 18
+          },
+          {
+            "action": "stamp",
+            "reachable": true,
+            "ray": "stamp",
+            "pathSteps": 15
+          },
+          {
+            "action": "source",
+            "reachable": true,
+            "ray": "source",
+            "pathSteps": 15
+          }
+        ],
+        "exits": {
+          "north": true,
+          "south": true
+        }
+      }
+    },
+    {
+      "id": "SPACE-7",
+      "result": "通過",
+      "detail": {
+        "scene": 7,
+        "freeCells": 1235,
+        "targets": [
+          {
+            "action": "service",
+            "reachable": true,
+            "ray": "service",
+            "pathSteps": 24
+          }
+        ],
+        "exits": {
+          "north": true,
+          "south": true
+        }
+      }
+    },
+    {
+      "id": "SPACE-8",
+      "result": "通過",
+      "detail": {
+        "scene": 8,
+        "freeCells": 941,
+        "targets": [
+          {
+            "action": "checkout",
+            "reachable": true,
+            "ray": "checkout",
+            "pathSteps": 13
+          }
+        ],
+        "exits": {
+          "north": true,
+          "south": true
+        }
+      }
+    },
+    {
+      "id": "RETURN-7",
+      "result": "通過",
+      "actual": 7,
+      "outcome": {
+        "x": 0,
+        "z": -3.6999999999999953,
+        "yaw": 0,
+        "pitch": 0
+      }
+    },
+    {
+      "id": "RETURN-8",
+      "result": "通過",
+      "actual": 8,
+      "outcome": {
+        "x": 0,
+        "z": -3.6999999999999953,
+        "yaw": 0,
+        "pitch": 0
+      }
+    },
+    {
+      "id": "RETURN-7",
+      "result": "通過",
+      "actual": 7,
+      "outcome": {
+        "x": 0,
+        "z": 3.6999999999999953,
+        "yaw": 0,
+        "pitch": 0
+      }
+    },
+    {
+      "id": "RETURN-6",
+      "result": "通過",
+      "actual": 6,
+      "outcome": {
+        "x": 0,
+        "z": 3.6999999999999953,
+        "yaw": 0,
+        "pitch": 0
+      }
+    },
+    {
+      "id": "RUNTIME",
+      "result": "通過",
+      "errors": []
+    }
+  ]
+}

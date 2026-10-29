@@ -1,0 +1,15 @@
+{
+  "name": "stamp",
+  "colliders": [],
+  "animations": [
+    {
+      "name": "stamp",
+      "duration": 0.800000011920929
+    }
+  ],
+  "nodes": [
+    "stamp_base",
+    "stamp_handle",
+    "stamp_top"
+  ]
+}

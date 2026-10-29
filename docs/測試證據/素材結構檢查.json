@@ -1,0 +1,98 @@
+{
+  "stage": "最終GLB結構檢查",
+  "date": "2026-10-29",
+  "models": [
+    {
+      "file": "archive.glb",
+      "bytes": 2360668,
+      "embeddedTextures": 3,
+      "animations": [
+        "door_open",
+        "drawer_open"
+      ]
+    },
+    {
+      "file": "bathroom.glb",
+      "bytes": 2567260,
+      "embeddedTextures": 3,
+      "animations": [
+        "door_open",
+        "drawer_open",
+        "mirror_open"
+      ]
+    },
+    {
+      "file": "clerk.glb",
+      "bytes": 2106828,
+      "embeddedTextures": 3,
+      "animations": [
+        "idle",
+        "look_up",
+        "vanish"
+      ]
+    },
+    {
+      "file": "corridor.glb",
+      "bytes": 2297404,
+      "embeddedTextures": 3,
+      "animations": [
+        "door_open"
+      ]
+    },
+    {
+      "file": "double.glb",
+      "bytes": 1464788,
+      "embeddedTextures": 2,
+      "animations": [
+        "idle",
+        "look_up",
+        "walk",
+        "look_back",
+        "vanish"
+      ]
+    },
+    {
+      "file": "elevator.glb",
+      "bytes": 2356552,
+      "embeddedTextures": 3,
+      "animations": [
+        "door_open"
+      ]
+    },
+    {
+      "file": "guestroom.glb",
+      "bytes": 2349240,
+      "embeddedTextures": 3,
+      "animations": [
+        "door_open",
+        "pillow_reveal"
+      ]
+    },
+    {
+      "file": "lobby.glb",
+      "bytes": 2357760,
+      "embeddedTextures": 3,
+      "animations": [
+        "door_open"
+      ]
+    },
+    {
+      "file": "stamp.glb",
+      "bytes": 696408,
+      "embeddedTextures": 1,
+      "animations": [
+        "stamp"
+      ]
+    },
+    {
+      "file": "surveillance.glb",
+      "bytes": 2348456,
+      "embeddedTextures": 3,
+      "animations": [
+        "door_open"
+      ]
+    }
+  ],
+  "images": 20,
+  "limits": "二進位與內嵌資產結構驗證；瀏覽器動畫另由自動測試記錄。"
+}

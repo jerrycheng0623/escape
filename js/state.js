@@ -1,0 +1,14 @@
+export const SAVE_KEY='room404-save-v1', CHECKPOINT_KEY='room404-checkpoint-v1', SETTINGS_KEY='room404-settings-v1', ENDINGS_KEY='room404-endings-v1';
+export function fresh(){return {version:1,scene:0,storyDate:new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Taipei'}).format(new Date()),solved:[],evidence:[],inventory:[],changes:[],introRead:false,corDoor:false,provisionalSecondGuest:false,revocationEvidenceRead:false,registrationSourceResolved:false,ending:null,pose:null,answer:null,mirrorFound:[],knockRemaining:10};}
+export let state=fresh();
+export const settings={volume:.35,sensitivity:1,fov:65,reduced:false,subtitles:true};
+export function replace(v){validate(v);state=structuredClone(v);return state;}
+export function validate(v){if(!v||v.version!==1||!Number.isInteger(v.scene)||v.scene<0||v.scene>8||!Array.isArray(v.solved)||v.solved.some(n=>!Number.isInteger(n)||n<1||n>12)||!Array.isArray(v.inventory)||!Array.isArray(v.evidence)||typeof v.storyDate!=='string'||!Array.isArray(v.changes)||!Array.isArray(v.mirrorFound)||v.inventory.some(x=>typeof x!=='string')||v.evidence.some(x=>typeof x!=='string')||!Number.isFinite(v.knockRemaining)||v.knockRemaining<0||v.knockRemaining>10||['introRead','corDoor','provisionalSecondGuest','revocationEvidenceRead','registrationSourceResolved'].some(k=>typeof v[k]!=='boolean')||![null,'normal','bad','true'].includes(v.ending))throw Error('存檔格式不完整或版本不符');return v;}
+export function done(n){return state.solved.includes(n);}
+export function add(field,val){if(!state[field].includes(val))state[field].push(val);}
+export function solve(n){add('solved',n);const evidence={2:'電梯鏡面通道檢修',3:'歷史住宿比對',6:'鏡面校準紀錄',7:'跨年份擬態對照',8:'超前通道列印單',9:'內部撤銷條款',10:'ROOM-404來源分析'};if(evidence[n])add('evidence',evidence[n]);if(n===3)add('inventory','報告碎片A');if(n===6)add('inventory','報告碎片B');if(n===8)add('inventory','報告碎片C');if(n===9){state.revocationEvidenceRead=true;add('inventory','報告碎片D');}if(n===10)state.registrationSourceResolved=true;if([2,4,6,8,10].includes(n))add('changes',n);}
+export function canRevoke(v=state){return v.revocationEvidenceRead===true&&v.registrationSourceResolved===true&&v.inventory.includes('管理員印章');}
+export function write(key,v){try{localStorage.setItem(key,JSON.stringify(v));return true;}catch{return false;}}
+export function read(key){const raw=localStorage.getItem(key);return raw?JSON.parse(raw):null;}
+try{const s=read(SETTINGS_KEY);if(s){settings.volume=Math.max(0,Math.min(1,Number(s.volume)||0));settings.sensitivity=Math.max(.2,Math.min(2,Number(s.sensitivity)||1));settings.fov=Math.max(55,Math.min(80,Number(s.fov)||65));settings.reduced=!!s.reduced;settings.subtitles=s.subtitles!==false;}}catch{}
+export function routeGate(scene){return scene===0?state.introRead:scene===1?done(2):scene===2?state.corDoor:scene===3?done(4):scene===4?done(6):scene===5?done(8):scene===6?done(10):scene===7;}

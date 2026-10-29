@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#101715"><meta name="description" content="404號房：最後一位房客。單人第一人稱3D心理恐怖密室逃脫。"><title>404號房：最後一位房客</title><link rel="icon" href="data:,"><link rel="stylesheet" href="style.css"></head>
+<body>
+<noscript><div class="fatal">此遊戲需要啟用 JavaScript，才能載入3D場景與解謎介面。</div></noscript>
+<main id="menu" class="menu">
+ <div class="menu-copy"><h1>404號房</h1><h2>最後一位房客</h2><div class="fine-rule"></div><p id="welcome">退房時，請務必確認房間內沒有留下任何人。</p><nav aria-label="遊戲選單"><button id="start" class="menu-item primary">開始調查</button><button id="continue" class="menu-item">繼續調查</button><button id="gallery" class="menu-item">素材圖鑑</button><button id="replay-intro" class="menu-item">重看序幕</button><button id="settings" class="menu-item">設定</button></nav></div>
+ <footer><span>WASD 移動　｜　滑鼠 轉頭　｜　E 互動</span><span>單人・第一人稱探索</span></footer><div class="small-screen">請使用電腦鍵盤與滑鼠遊玩；此裝置可先瀏覽選單與素材圖鑑。</div>
+</main>
+<div id="game" hidden><canvas id="world" aria-label="第一人稱3D探索場景"></canvas><div id="shade"></div><header class="hud"><div><b id="place">永安旅館</b><small id="objective"></small></div><div><span id="clock">03:17</span><button data-global="help">下一步 H</button><button data-global="inventory">物品 I</button><button data-global="journal">筆記 J</button><button data-global="pause">暫停 Esc</button></div></header><aside id="guide-hud" class="guide-hud" aria-label="目前任務與下一步"><small>調查指引</small><b id="guide-task"></b><p id="guide-action"></p><span id="guide-next"></span><button data-global="help">查看完整指引 H</button></aside><div id="crosshair" aria-hidden="true">·</div><div id="interact" class="interact" hidden></div><div id="caption" class="caption" role="status"></div><div class="key-hint">WASD 走路　滑鼠／方向鍵 轉頭　E 互動</div></div>
+<div id="overlay" class="overlay" hidden><section id="panel" class="panel" role="dialog" aria-modal="true" aria-labelledby="panel-title"><header class="panel-head"><h2 id="panel-title"></h2><button id="close-panel" aria-label="關閉面板">關閉 ×</button></header><div id="panel-body"></div></section></div>
+<section id="story-film" class="story-film" role="dialog" aria-modal="true" aria-label="2D劇情動畫" hidden></section>
+<div id="loading" class="loading" hidden><div class="loading-line"></div><p id="loading-text">正在開啟旅館……</p></div>
+<div id="toast" class="toast" role="status" hidden></div>
+<script type="module">import('./js/main.js').catch(()=>{const box=document.createElement('div');box.className='fatal';box.textContent='遊戲模組載入失敗。請以靜態HTTP方式開啟，確認js與vendor檔案齊全後重新整理。';document.body.prepend(box);});</script>
+</body></html>

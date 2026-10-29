@@ -1,0 +1,212 @@
+{
+  "date": "2026-10-29",
+  "method": "IAB先行確認，再經使用者授權Playwright工程測試",
+  "browser": "151.0.7922.34",
+  "viewport": {
+    "width": 1536,
+    "height": 1024
+  },
+  "results": [
+    {
+      "id": "WEB-01",
+      "result": "通過",
+      "detail": "純靜態入口可載入，首頁原生HTML文案可讀"
+    },
+    {
+      "id": "MOV-01",
+      "result": "通過",
+      "detail": {
+        "before": {
+          "x": 0,
+          "z": 2.3,
+          "yaw": 0,
+          "pitch": 0
+        },
+        "after": {
+          "x": 0,
+          "z": 1.473279999999999,
+          "yaw": 0,
+          "pitch": 0
+        }
+      }
+    },
+    {
+      "id": "MOV-03",
+      "result": "通過",
+      "detail": {
+        "x": -2.6766467065868245,
+        "z": 1,
+        "yaw": 0,
+        "pitch": 0
+      }
+    },
+    {
+      "id": "MOV-09",
+      "result": "通過",
+      "detail": "沒有跑步／蹲下／跳躍動作"
+    },
+    {
+      "id": "CAM-01",
+      "result": "通過",
+      "detail": 1.396
+    },
+    {
+      "id": "UI-02",
+      "result": "通過",
+      "detail": "面板開啟時按W不移動"
+    },
+    {
+      "id": "PZ-01",
+      "result": "通過",
+      "detail": "錯序可恢復，2613完成，顯示兩人互鎖"
+    },
+    {
+      "id": "PZ-02",
+      "result": "通過",
+      "detail": "鏡面停用才通過，主感測停用無效"
+    },
+    {
+      "id": "PZ-03",
+      "result": "通過",
+      "detail": "由K編號排序並取得A"
+    },
+    {
+      "id": "PZ-04",
+      "result": "通過",
+      "detail": "讀筆記停表，回答兩位僅候補且繼續"
+    },
+    {
+      "id": "PZ-05",
+      "result": "通過",
+      "detail": "五處異常均可點擊辨識"
+    },
+    {
+      "id": "PZ-06",
+      "result": "通過",
+      "detail": "需翻轉、遮臉、對齊；7183後取得B"
+    },
+    {
+      "id": "PZ-07",
+      "result": "通過",
+      "detail": "物件事件正序才完成，五組對照可讀"
+    },
+    {
+      "id": "PZ-08",
+      "result": "通過",
+      "detail": "關螢幕無效，D實際斷訊取得C"
+    },
+    {
+      "id": "PZ-09",
+      "result": "通過",
+      "detail": "拼圖與核對成功只開抽屜，未自動取得印章"
+    },
+    {
+      "id": "PZ-10",
+      "result": "通過",
+      "detail": "ROOM-404完成分析，不直接核定候補"
+    },
+    {
+      "id": "ASSET-06",
+      "result": "通過",
+      "detail": "擬態GLB可檢視且walk動畫可選播放；另有GLB結構驗證"
+    },
+    {
+      "id": "PZ-11",
+      "result": "通過",
+      "detail": "無效值不觸發結局，取消有效，1正常"
+    },
+    {
+      "id": "ENDING-BAD",
+      "result": "通過",
+      "detail": "由同一退房檢查點測2→錯誤"
+    },
+    {
+      "id": "PZ-12",
+      "result": "通過",
+      "detail": "缺章拒絕，實際取章、可取消、確認撤銷才真結局；回程行走另測"
+    },
+    {
+      "id": "REVOKE-TRUTH",
+      "result": "通過",
+      "detail": [
+        {
+          "a": false,
+          "b": false,
+          "c": false,
+          "result": false
+        },
+        {
+          "a": false,
+          "b": false,
+          "c": true,
+          "result": false
+        },
+        {
+          "a": false,
+          "b": true,
+          "c": false,
+          "result": false
+        },
+        {
+          "a": false,
+          "b": true,
+          "c": true,
+          "result": false
+        },
+        {
+          "a": true,
+          "b": false,
+          "c": false,
+          "result": false
+        },
+        {
+          "a": true,
+          "b": false,
+          "c": true,
+          "result": false
+        },
+        {
+          "a": true,
+          "b": true,
+          "c": false,
+          "result": false
+        },
+        {
+          "a": true,
+          "b": true,
+          "c": true,
+          "result": true
+        }
+      ]
+    },
+    {
+      "id": "SAVE-05",
+      "result": "通過",
+      "detail": "還原至未確認前，結局沒有污染檢查點"
+    },
+    {
+      "id": "WEB-02",
+      "result": "通過",
+      "detail": {
+        "requests": 99,
+        "external": []
+      }
+    },
+    {
+      "id": "UI-06",
+      "result": "通過",
+      "detail": "桌面與窄螢幕選單截圖；不代表手機玩法"
+    },
+    {
+      "id": "AV-08",
+      "result": "通過",
+      "detail": "無未處理錯誤與HTTP失敗"
+    }
+  ],
+  "errors": [],
+  "limits": [
+    "此腳本的關卡入口使用工程存檔預置；不是首次玩家無提示完整通關。",
+    "未測10分鐘效能、其他瀏覽器、125%縮放及首次45～60分鐘難度。",
+    "六區連續行走與回取印章另由路線腳本驗證。"
+  ]
+}
