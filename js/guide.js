@@ -1,7 +1,8 @@
+import {controlText} from './controls.js';
 import {state,done} from './state.js';
 // Derived from existing save fields: old version-1 saves need no migration.
 export function guide(){
- const step=(chapter,task,action,next)=>({chapter,task,action,next});
+ const step=(chapter,task,action,next)=>({chapter,task,action:controlText(action),next:controlText(next)});
  switch(state.scene){
  case 0:return state.introRead?step('序章・來信之後','前往電梯','櫃檯紀錄已收進筆記。回到房間中央，朝已開啟的前方門口走。','穿過門口，調查不存在的四樓。'):step('序章・來信之後','確認自己的入住紀錄','走近櫃檯，轉頭對準「住宿登記簿」，出現 E 提示後按 E。讀完兩頁文字。','記下入住人數，再從前方門口前往電梯。');
  case 1:if(!done(1))return step('第一關・不存在的四樓','啟用被隱藏的樓層','靠近左側「樓層與維護」，按 E。對照維修路線卡，依工序輸入四個樓層，再確認。','維護完成後，還要排除人像計數異常，電梯才會開門。');
