@@ -1,0 +1,23 @@
+# 404號房：最後一位房客
+
+單人第一人稱3D心理恐怖密室逃脫。六幕2D序幕、六個關卡、十二個機關、三種完整劇情結局，以及依進度更新的行動指引。
+
+GitHub Pages發布目標：https://jerrycheng0623.github.io/escape/
+
+## 操作
+
+電腦鍵盤與滑鼠遊玩：WASD走路、滑鼠或方向鍵轉頭、E互動、H查看下一步、J調查筆記、I物品、Esc暫停。沒有跑步、蹲下或跳躍。
+
+前導動畫可暫停、略過、重看；減少動態時預設手動閱讀。存檔保存在目前瀏覽器的localStorage，不會跨網址或裝置自動同步。由原本私人網址改玩此公開網址時，需要開始新調查。
+
+## 靜態部署
+
+此儲存庫根目錄就是可部署成品，只有HTML、CSS、JavaScript及圖片／GLB資產，不需要遊戲後台或npm建置。Three.js與載入器附在vendor，授權見vendor/THREE-LICENSE.txt。
+
+GitHub Pages設定：Settings → Pages → Deploy from a branch → main → /(root)。`.nojekyll`讓靜態檔案直接發布。
+
+本機預覽可在此目錄執行 `python3 -m http.server 8174`，再開啟 http://127.0.0.1:8174/ 。請以HTTP／HTTPS開啟，避免file協定的模組與模型載入限制。
+
+## 設計與驗證
+
+設計文件在docs/，遊戲內素材圖鑑亦可閱讀。含劇情解答，遊玩前可先略過文件。已完成的工程測試與未測限制列於docs/TEST.md；不將工程通關視為首次玩家盲玩。
